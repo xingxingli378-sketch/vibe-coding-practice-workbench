@@ -1,0 +1,14 @@
+[
+  {
+    "station": " A ",
+    "temperature": "21.5"
+  },
+  {
+    "station": "B",
+    "temperature": null
+  },
+  {
+    "station": "C",
+    "temperature": 25
+  }
+]

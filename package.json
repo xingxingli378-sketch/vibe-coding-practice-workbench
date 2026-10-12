@@ -1,0 +1,12 @@
+{
+  "name": "vibe-coding-practice-workbench",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Local beginner-friendly Qwen Code practice workbench",
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "dependencies": {
+    "@qwen-code/qwen-code": "0.25.0"
+  }
+}

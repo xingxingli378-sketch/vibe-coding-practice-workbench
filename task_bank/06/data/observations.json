@@ -1,0 +1,22 @@
+[
+  {
+    "station": "A",
+    "time": "2026-10-01 08:00",
+    "temperature": 35
+  },
+  {
+    "station": "B",
+    "time": "2026-10-01 08:00",
+    "temperature": 34
+  },
+  {
+    "station": "C",
+    "time": "2026-10-01 08:00",
+    "temperature": 36
+  },
+  {
+    "station": "E",
+    "time": "2026-10-01 08:00",
+    "temperature": 20
+  }
+]

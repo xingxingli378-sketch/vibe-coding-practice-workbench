@@ -1,0 +1,4 @@
+﻿station,time,temperature,unit
+A,2026-10-01 08:00,23,C
+A,2026-02-30 10:00,20,C
+B,2026-10-01 08:00,nan,C

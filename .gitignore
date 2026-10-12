@@ -1,0 +1,23 @@
+# Learner work and personal session data
+tasks/
+practice-state.json
+practice-state.tmp
+.qwen/
+.env
+.env.*
+!.env.example
+*.jsonl
+*.log
+# Local dependencies and QA scratch
+node_modules/
+runtime/
+.venv/
+venv/
+__pycache__/
+*.pyc
+.check-work/
+work/
+.backups/
+dist/
+.DS_Store
+Thumbs.db
