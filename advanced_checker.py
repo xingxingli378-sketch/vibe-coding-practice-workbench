@@ -1,4 +1,6 @@
 import sys,json,copy,math,tempfile,shutil,types
+if hasattr(sys.stdout, 'reconfigure'):
+    sys.stdout.reconfigure(encoding='utf-8')
 from pathlib import Path
 from PIL import Image
 ROOT=Path(__file__).resolve().parent

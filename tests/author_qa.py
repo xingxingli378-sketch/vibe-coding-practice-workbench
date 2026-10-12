@@ -1,6 +1,8 @@
 """Private author QA: reference implementations never copied to learner tasks."""
 from pathlib import Path
 import shutil,subprocess,sys,json
+if hasattr(sys.stdout, 'reconfigure'):
+    sys.stdout.reconfigure(encoding='utf-8')
 ROOT=Path(__file__).resolve().parents[1]
 QA=ROOT/'work'/'author-qa';QA.mkdir(parents=True,exist_ok=True)
 shutil.copy2(ROOT/'advanced_checker.py',QA/'advanced_checker.py')

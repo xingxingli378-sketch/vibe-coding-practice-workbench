@@ -1,4 +1,4 @@
-import unittest,json,io,tempfile,shutil,sys,subprocess,time,copy,types
+import unittest,json,io,tempfile,shutil,sys,subprocess,time,copy,types,os
 from pathlib import Path
 from unittest.mock import patch
 ROOT=Path(__file__).resolve().parents[1]
@@ -53,6 +53,11 @@ class WorkbenchTests(unittest.TestCase):
         for n,total in ((4,15),(5,16),(6,16)):
             result=subprocess.run([sys.executable,str(self.root/'advanced_checker.py'),str(n),'--extra'],capture_output=True,encoding='utf-8',check=True)
             report=json.loads(result.stdout);self.assertEqual(report['total'],total);self.assertEqual(report['suite'],'extra')
+    def test_checker_json_is_utf8_on_non_utf8_windows_console(self):
+        env=os.environ.copy();env['PYTHONIOENCODING']='cp1252'
+        for n,script in ((1,'checker.py'),(4,'advanced_checker.py')):
+            result=subprocess.run([sys.executable,str(self.root/script),str(n)],env=env,capture_output=True,encoding='utf-8',check=True)
+            report=json.loads(result.stdout);self.assertEqual(report['total'],10)
     def test_clear_keeps_learner_files_and_check(self):
         server.STATE['tasks']['1']={'history':[{'text':'test'}],'session':'old','check':{'passed':8}}
         target=server.TASKS/'01/analyze.py';before=target.read_bytes()

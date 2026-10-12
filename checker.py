@@ -1,4 +1,6 @@
 import sys, json, importlib.util, copy, math
+if hasattr(sys.stdout, 'reconfigure'):
+    sys.stdout.reconfigure(encoding='utf-8')
 sys.dont_write_bytecode = True
 from pathlib import Path
 from PIL import Image, UnidentifiedImageError
