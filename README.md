@@ -78,7 +78,6 @@ Qwen 使用 `auto-edit`，未启用自动批准所有工具。当前环境如果
 
 ## 主要官方参考
 
-- [学院作答形式说明](https://www.sii.edu.cn/2026/0930/c24a1242/page.htm)
 - [Qwen Code 安装说明](https://github.com/QwenLM/qwen-code/blob/main/scripts/installation/INSTALLATION_GUIDE.md)
 - [Qwen Code Headless 模式](https://github.com/QwenLM/qwen-code/blob/main/docs/users/features/headless.md)
 - [GitHub：上传已有本地项目](https://docs.github.com/en/migrations/importing-source-code/using-the-command-line-to-import-source-code/adding-locally-hosted-code-to-github)
